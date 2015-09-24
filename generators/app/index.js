@@ -2,9 +2,6 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
-// var util = require('util');
-// var path = require('path');
-// var fs = require('fs-extra');
  
 module.exports = yeoman.generators.Base.extend( {
     dependencies: {},
@@ -72,8 +69,9 @@ module.exports = yeoman.generators.Base.extend( {
         var generator = this;
         var done = this.async();
 
-        generator.copy( '_.gitignore', '.gitignore' );
-        generator.copy( '_.editorconfig', '.editorconfig' );
+        generator.copy( '.gitignore', '.gitignore' );
+        generator.copy( '.editorconfig', '.editorconfig' );
+        generator.copy( 'Gulpfile.js', 'Gulpfile.js' );
 
         generator.directory('source', 'source');
         generator.directory('.gulp', '.gulp');
