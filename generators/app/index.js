@@ -69,8 +69,8 @@ module.exports = yeoman.generators.Base.extend( {
         var generator = this;
         var done = this.async();
 
-        generator.copy( '.gitignore', '.gitignore' );
-        generator.copy( '.editorconfig', '.editorconfig' );
+        generator.copy( 'gitignore', '.gitignore' );
+        generator.copy( 'editorconfig', '.editorconfig' );
         generator.copy( 'Gulpfile.js', 'Gulpfile.js' );
 
         generator.directory('source', 'source');
