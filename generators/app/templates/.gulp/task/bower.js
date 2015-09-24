@@ -19,7 +19,6 @@ module.exports = function (gulp, plugins, config) {
                 // exclude the files from which we can get the sass-version
                 exclude: [
                     'foundation', 
-                    'font-awesome',
                     'sementic-ui'
                 ],
                 // config: the file is not in the root but the bower_components

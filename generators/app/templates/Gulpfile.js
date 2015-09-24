@@ -82,6 +82,7 @@ gulp.task('default', ['sass', 'bower', 'serve'], function () {
 /* Build: deleteTmpFolders, copyPhpBuild, copyFontBuild, imageMinBuild, userefBuild, serveBuild */
 gulp.task('deleteTmpFolders',   getTask('deleteTmpFolders'));
 gulp.task('copyPhpBuild',       getTask('copyPhpBuild'));
+gulp.task('copySassBuild',       getTask('copySassBuild'));
 gulp.task('copyFontBuild',      getTask('copyFontBuild'));
 gulp.task('imageMinBuild',      getTask('imageMinBuild'));
 gulp.task('userefBuild',        ['copyPhpBuild'], getTask('userefBuild'));
@@ -91,6 +92,7 @@ gulp.task('userefBuild',        ['copyPhpBuild'], getTask('userefBuild'));
 gulp.task( 'build', [
     'sass',
     'copyPhpBuild',
+    'copySassBuild',
     'copyFontBuild',
     'imageMinBuild',
     'userefBuild'
