@@ -1,6 +1,6 @@
 {
   "name": "generator-aw-sitebuild",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "stefanKuijers/generator-aw-sitebuild",
   "description": "A generator to setup a frontend workflow to sitebuild. The sitebuild it meant to pass on to backend developers for PHP development.",
   "license": "MIT",
@@ -10,7 +10,9 @@
     "email": "",
     "url": "https://github.com/stefanKuijers"
   },
-  "keywords": ["yeoman-generator"],
+  "keywords": [
+    "yeoman-generator"
+  ],
   "files": [
     "generators"
   ],
