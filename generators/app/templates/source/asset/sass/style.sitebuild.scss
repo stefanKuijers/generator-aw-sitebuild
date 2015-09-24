@@ -1,0 +1,13 @@
+
+// bower:scss
+// endbower<% if (dependencies.framework === 'Semantic UI') { %>
+@import '../../../bower_components/semantic-ui-sass/app/assets/stylesheets/semantic-ui.scss';
+<% } %>
+
+
+// base
+@import 'vars';
+@import 'base';
+
+// generator:scss
+// endgenerator

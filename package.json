@@ -1,0 +1,27 @@
+{
+  "name": "generator-aw-sitebuild",
+  "version": "0.0.0",
+  "description": "A generator to setup a frontend workflow to sitebuild. The sitebuild it meant to pass on to backend developers for PHP development.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "author": {
+    "name": "S Kuijers",
+    "email": "",
+    "url": "https://github.com/stefanKuijers"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "fs-extra": "^0.24.0",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
