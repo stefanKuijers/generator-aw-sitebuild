@@ -2,8 +2,8 @@
     GulpFile
 *//*
     All you need to know:
-    Gulp needs this file to know what it should do. Open a command-line, go to this folder,
-    type 'gulp' and hit enter.
+    Gulp needs this file to know what it should do. Open a command-line, go to this folder
+    and type 'gulp' and hit enter.
 
     It will compile your sass, inject any libraries you install with bower and serve 
     your project. When you change files, just hit save and your browser will stay up to 
@@ -14,13 +14,13 @@
 */
 
 
-
 /*
     Require Modules
 */
 // loading gulp and all the gulp-plugins which we have in package.json
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({ camelize: true });
+var config = require('./.gulp/config')();
 
 // these plugins are not gulp-specific and have to be loaded individually
 plugins.browserSync  = require('browser-sync').create();
@@ -30,53 +30,6 @@ plugins.del          = require('del');
 plugins.yargs        = require('yargs');
 plugins.fs           = require('fs');
 /* End Require */
-
-
-
-/*
-    Config
-*/
-var config = {
-    dir: {
-        gulpTasks: './.gulp/tasks/',
-        gulpTemplates: './.gulp/templates/',
-        source: './source/',
-        dist: './build/',
-        bowerComponents: './bower_components',
-        templates: './source/templates/',
-        css: './source/asset/css/',
-        image: './source/asset/image/',
-        sass: './source/asset/sass/',
-        sassComponent: './source/asset/sass/component/',
-        relativeSassComponent: 'component/',
-        app: './source/asset/js/app/',
-        relativeApp: 'asset/js/app/'
-    },
-
-    path: {
-        sass: './source/asset/sass/**/*.scss',
-        mainSassFile: './source/asset/sass/style.sitebuild.scss',
-        php: './**/*.php',
-        js: './source/asset/js/app/**/*.js',
-        scriptReference: './source/templates/pageClose.php',
-        styleReference: './source/templates/pageOpen.php',
-        bower: './bower.json'
-    },
-
-    error: {
-        params: {
-            title:    "Gulp",
-            message:  "<%= error.message %>",
-            sound: false
-        },
-        handler: function(err) {
-            plugins.notify.onError( config.error.params )(err);
-
-            if ( this.emit !== undefined ) this.emit('end');
-        }
-    }
-};
-/* End Config */
 
 
 

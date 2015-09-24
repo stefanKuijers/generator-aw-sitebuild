@@ -43,13 +43,13 @@ module.exports = yeoman.generators.Base.extend( {
                 generator.dependencies.fontAwesome = props.fontAwesome;
 
                 if ( generator.dependencies.framework === 'No framework' ) {
-                    generator.log( yosay( chalk.yellow('I salute you, brave one.') + '\nNot using a framework in these times is a show of true courage, expertise and character') );
+                    generator.log( yosay( chalk.yellow('I salute you, brave one.') + '\nNot using a framework in these times is a show of true courage and overconfidence') );
                 }
 
                 done();
             }
 
-            if ( generator.framework === 'Pure CSS' || generator.framework === 'No framework' ) {
+            if ( props.framework === 'Pure CSS' || props.framework === 'No framework' ) {
                 generator.prompt( {
                     type: 'confirm',
                     name: 'jQuery',
@@ -118,11 +118,14 @@ module.exports = yeoman.generators.Base.extend( {
 
     templating: function() {
         var generator = this;
-        generator.packageName = generator.appName.replace(' ', '-')
+        generator.packageName = generator.appName.replace(' ', '-').replace(' ', '-').replace(' ', '-');
 
         this.template( '_bower.json', 'bower.json' );
         this.template( '_package.json', 'package.json' );
+        this.template( 'source/templates/pageOpen.php', 'source/templates/pageOpen.php' );
         this.template( 'source/asset/sass/style.sitebuild.scss', 'source/asset/sass/style.sitebuild.scss' );
+        this.template( 'source/asset/js/app/home.js', 'source/asset/js/app/home.js' );
+        this.template( 'source/asset/js/app/mainMenu.js', 'source/asset/js/app/mainMenu.js' );
     },
 
     installDependencies: function() {
