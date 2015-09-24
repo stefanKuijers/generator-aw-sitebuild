@@ -122,10 +122,12 @@ module.exports = yeoman.generators.Base.extend( {
 
         this.template( '_bower.json', 'bower.json' );
         this.template( '_package.json', 'package.json' );
-        this.template( 'source/templates/pageOpen.php', 'source/templates/pageOpen.php' );
+        this.template( 'source/template/pageOpen.php', 'source/template/pageOpen.php' );
         this.template( 'source/asset/sass/style.sitebuild.scss', 'source/asset/sass/style.sitebuild.scss' );
         this.template( 'source/asset/js/app/home.js', 'source/asset/js/app/home.js' );
         this.template( 'source/asset/js/app/mainMenu.js', 'source/asset/js/app/mainMenu.js' );
+        this.template( 'source/asset/js/app/products.js', 'source/asset/js/app/products.js' );
+        this.template( 'source/asset/js/app/product.js', 'source/asset/js/app/product.js' );
     },
 
     installDependencies: function() {

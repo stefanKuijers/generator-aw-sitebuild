@@ -1,3 +1,4 @@
+<!-- @: template/product.php -->
 <li>
     <h3>
         <?=$product['name']?>
@@ -7,3 +8,4 @@
     </p>
 
 </li>
+<!-- /: template/product.php -->

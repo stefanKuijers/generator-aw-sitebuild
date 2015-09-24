@@ -15,7 +15,7 @@ module.exports = function (gulp, plugins, config) {
 		}
 
 		var pathVars = {
-			dest: config.dir.source + 'templates/',
+			dest: config.dir.templates,
 			name: name + '.php'
 		}
 		if ( plugins.fs.existsSync( pathVars.dest + pathVars.name ) ) {

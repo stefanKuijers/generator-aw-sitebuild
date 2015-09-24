@@ -1,12 +1,12 @@
 module.exports = function() {
     return {
         dir: {
-            gulpTasks: './.gulp/tasks/',
-            gulpTemplates: './.gulp/templates/',
+            gulpTasks: './.gulp/task/',
+            gulpTemplates: './.gulp/template/',
             source: './source/',
             dist: './build/',
             bowerComponents: './bower_components',
-            templates: './source/templates/',
+            templates: './source/template/',
             css: './source/asset/css/',
             image: './source/asset/image/',
             sass: './source/asset/sass/',
@@ -21,8 +21,8 @@ module.exports = function() {
             mainSassFile: './source/asset/sass/style.sitebuild.scss',
             php: './**/*.php',
             js: './source/asset/js/app/**/*.js',
-            scriptReference: './source/templates/pageClose.php',
-            styleReference: './source/templates/pageOpen.php',
+            scriptReference: './source/template/pageClose.php',
+            styleReference: './source/template/pageOpen.php',
             bower: './bower.json'
         },
 

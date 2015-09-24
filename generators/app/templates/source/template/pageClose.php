@@ -9,6 +9,8 @@
         <!-- generator:js -->
         <script src="asset/js/app/home.js"></script>
         <script src="asset/js/app/mainMenu.js"></script>
+        <script src="asset/js/app/products.js"></script>
+        <script src="asset/js/app/product.js"></script>
 		<!-- endgenerator -->
         <!-- endbuild -->
     </body>

@@ -1,4 +1,4 @@
-<!-- @: templates/page/open.php -->
+<!-- @: template/page/open.php -->
 <!doctype html>
 <html>
     <head>
@@ -19,4 +19,4 @@
         <!-- endbuild -->
     </head>
     <body>
-    <!-- /: templates/page/open.php -->
+    <!-- /: template/page/open.php -->

@@ -1,6 +1,6 @@
-<?php include('templates/pageOpen.php'); ?>
+<?php include('template/pageOpen.php'); ?>
 
-        <?php include('templates/pageHeader.php'); ?>
+        <?php include('template/pageHeader.php'); ?>
 
 
 
@@ -12,13 +12,13 @@
 
         <ul>
             <?php foreach ($products as $product) {
-                include('templates/product.php');
+                include('template/product.php');
             } ?>
         </ul>
         <!-- /: products.php -->
 
 
 
-        <?php include('templates/pageFooter.php'); ?>
+        <?php include('template/pageFooter.php'); ?>
 
-<?php include('templates/pageClose.php'); ?>
+<?php include('template/pageClose.php'); ?>

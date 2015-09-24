@@ -1,3 +1,4 @@
+<!-- @: template/mainMenu.php -->
 <nav>
     <ul>
         <li>
@@ -6,8 +7,6 @@
         <li>
             <a href="/products.php">products</a>
         </li>
-        <li>
-            <a href="/contact.php">contact</a>
-        </li>
     </ul>
 </nav>
+<!-- /: template/mainMenu.php -->

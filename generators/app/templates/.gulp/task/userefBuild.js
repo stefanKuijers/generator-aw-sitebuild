@@ -15,7 +15,7 @@ module.exports = function (gulp, plugins, config) {
         .pipe( plugins.if( '*.css', plugins.minifyCss() ) )
         .pipe( assets.restore() )
         .pipe( plugins.useref() )
-        .pipe( gulp.dest( config.dir.dist + 'templates/' ) );
-    }
+        .pipe( gulp.dest( config.dir.templates ) );
+    };
 	
 };

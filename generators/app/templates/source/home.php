@@ -1,16 +1,16 @@
-<?php include('templates/pageOpen.php'); ?>
+<?php include('template/pageOpen.php'); ?>
 
-        <?php include('templates/pageHeader.php'); ?>
+        <?php include('template/pageHeader.php'); ?>
 
 
 
-        <!-- @: index.php -->
+        <!-- @: home.php -->
         <h1>Finally</h1>
         <p>home</p>
-        <!-- /: index.php -->
+        <!-- /: home.php -->
 
 
 
-        <?php include('templates/pageFooter.php'); ?>
+        <?php include('template/pageFooter.php'); ?>
 
-<?php include('templates/pageClose.php'); ?>
+<?php include('template/pageClose.php'); ?>
