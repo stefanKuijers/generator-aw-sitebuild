@@ -43,7 +43,7 @@ module.exports = yeoman.generators.Base.extend( {
                 generator.dependencies.fontAwesome = props.fontAwesome;
 
                 if ( generator.dependencies.framework === 'No framework' ) {
-                    generator.log( yosay( chalk.yellow('I salute you, brave one.') + '\nNot using a framework in these times is a show of true courage and overconfidence') );
+                    generator.log( yosay( chalk.yellow('I salute you, brave one.') + '\nNot using a framework in these times is a show of true courage and maybe a bit of overconfidence') );
                 }
 
                 done();
