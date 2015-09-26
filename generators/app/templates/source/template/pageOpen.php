@@ -10,6 +10,7 @@
 
         <!-- build:css(./bower_components) ../asset/style/vendor.sitebuild.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbower -->
         <!-- endbuild -->
 

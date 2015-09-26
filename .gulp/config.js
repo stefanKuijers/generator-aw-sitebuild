@@ -7,14 +7,22 @@ module.exports = function( gulp, plugins ) {
             gulpFiles: '.gulp/',
             generatorSource: './generator-source/',
             appGenerator: './generators/app/templates/',
-            gulpGenerator: './generators/gulp/templates/'
+            gulpGenerator: './generators/gulp/templates/',
+            source: 'source/',
+            sass: 'source/asset/sass/',
+            js: 'source/asset/js/'
         },
 
         path: {
             gulpFiles: '.gulp/**/*',
             gulpFile: 'Gulpfile.js',
             gitignore: '.gitignore',
-            editorConfig: '.editorconfig'
+            editorConfig: '.editorconfig',
+            packageJson: 'package.json',
+            php: 'source/**/*.php',
+            sassComponents: 'source/asset/sass/**/_*.scss',
+            mainSassFile: 'source/asset/sass/style.sitebuild.scss',
+            js: 'source/asset/js/**/*.js'
         },
 
         error: {

@@ -1,3 +1,9 @@
+/* generator:js if-jquery */
 $( document ).ready( function() {
-    console.log('JS for product.php');
+/* generator:js end-if-jquery */
+
+    console.log('JS for products.php');
+
+/* generator:js if-jquery */   
 } );
+/* generator:js end-if-jquery */

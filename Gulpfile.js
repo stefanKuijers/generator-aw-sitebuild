@@ -32,7 +32,20 @@ function getTask(task) {
 gulp.task('copyGulpFiles', getTask('copyGulpFiles'));
 gulp.task('copyGitIgnore', getTask('copyGitIgnore'));
 gulp.task('copyEditorConfig', getTask('copyEditorConfig'));
-// gulp.task('serve', getTask('serve'));
+gulp.task('buildPackageJson', getTask('buildPackageJson'));
+gulp.task('copyPhp', getTask('copyPhp'));
+gulp.task('copySassComponents', getTask('copySassComponents'));
+gulp.task('buildMainSassFile', getTask('buildMainSassFile'));
+gulp.task('buildJs', getTask('buildJs'));
 
-gulp.task('build', [ 'copyGulpFiles' ] );
+gulp.task('build', [ 
+    'copyGulpFiles', 
+    'copyGitIgnore',
+    'copyEditorConfig',
+    'buildPackageJson',
+    'copyPhp',
+    'copySassComponents',
+    'buildMainSassFile',
+    'buildJs'
+] );
 /* end Tasks */
