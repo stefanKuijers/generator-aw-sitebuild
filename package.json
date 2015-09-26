@@ -1,6 +1,6 @@
 {
   "name": "generator-aw-sitebuild",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "repository": "stefanKuijers/generator-aw-sitebuild",
   "description": "A generator to setup a frontend workflow to sitebuild. The sitebuild it meant to pass on to backend developers for PHP development.",
   "license": "MIT",
