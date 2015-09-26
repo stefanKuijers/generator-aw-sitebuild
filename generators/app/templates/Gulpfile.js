@@ -20,7 +20,6 @@
 // loading gulp and all the gulp-plugins which we have in package.json
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({ camelize: true });
-var config = require('./.gulp/config')();
 
 // these plugins are not gulp-specific and have to be loaded individually
 plugins.browserSync  = require('browser-sync').create();
@@ -31,6 +30,7 @@ plugins.yargs        = require('yargs');
 plugins.fs           = require('fs');
 /* End Require */
 
+var config = require('./.gulp/config')(gulp, plugins);
 
 
 /*

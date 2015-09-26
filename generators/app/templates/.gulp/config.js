@@ -1,5 +1,5 @@
-module.exports = function() {
-    return {
+module.exports = function( gulp, plugins ) {
+    var config = {
         dir: {
             gulpTasks: './.gulp/task/',
             gulpTemplates: './.gulp/template/',
@@ -39,4 +39,6 @@ module.exports = function() {
             }
         }
     };
+
+    return config;
 };
