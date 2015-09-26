@@ -8,13 +8,13 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(./bower_components) ../asset/styles/vendor.sitebuild.css -->
+        <!-- build:css(./bower_components) ../asset/style/vendor.sitebuild.css -->
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
 
 
-        <!-- build:css(./source) ../asset/styles/style.sitebuild.css -->
+        <!-- build:css(./source) ../asset/style/style.sitebuild.css -->
         <link rel="stylesheet" href="asset/css/style.sitebuild.css">
         <!-- endbuild -->
     </head>
