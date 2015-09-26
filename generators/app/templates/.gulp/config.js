@@ -28,8 +28,8 @@ module.exports = function( gulp, plugins ) {
 
         error: {
             params: {
-                title:    "Gulp",
-                message:  "<%= error.message %>",
+                title:    'Gulp',
+                message:  '<%= error.message %>',
                 sound: false
             },
             handler: function(err) {
