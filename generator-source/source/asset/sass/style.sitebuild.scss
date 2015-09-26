@@ -1,0 +1,16 @@
+
+// bower:scss
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+// base
+@import 'vars';
+@import 'base';
+
+// generator:scss
+@import 'component/home';
+@import 'component/products';
+@import 'component/product';
+@import 'component/mainMenu';
+// endgenerator

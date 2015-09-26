@@ -1,0 +1,1 @@
+$(document).ready(function(){console.log("JS for home.php")}),$(document).ready(function(){console.log("JS for mainMenu.php")}),$(document).ready(function(){console.log("JS for product.php")}),$(document).ready(function(){console.log("JS for product.php")});

@@ -1,0 +1,23 @@
+<!-- @: template/page/open.php -->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>a final test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css(./bower_components) ../asset/style/vendor.sitebuild.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+
+
+        <!-- build:css(./source) ../asset/style/style.sitebuild.css -->
+        <link rel="stylesheet" href="asset/css/style.sitebuild.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+    <!-- /: template/page/open.php -->

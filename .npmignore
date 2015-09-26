@@ -2,4 +2,6 @@ node_modules/
 *.sublime-project
 *.sublime-workspace
 npm-debug.log
-generator-result/
+source/
+.gulp/
+Gulpfile.js
