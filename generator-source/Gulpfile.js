@@ -63,7 +63,7 @@ gulp.task(                // register a task
 // this task runs a series of other tasks; sass, bower, serve. Once they are done it will execute the
 // function we passed in.
 // So here we compile our sass, inject our bower dependencies and after that start our server.
-gulp.task('default', ['sass', 'bower', 'serve'], function () {
+gulp.task('default', ['bower', 'sass', 'serve'], function () {
     // once the server is up:
 
     //  start watching our php and js files. Reload all browsers if the files change.
@@ -90,6 +90,7 @@ gulp.task('userefBuild',        ['copyPhpBuild'], getTask('userefBuild'));
 // A series of gulp tasks under one command. When we type '$ gulp build' it will execute all the tasks in 
 // array after it in order
 gulp.task( 'build', [
+    'bower',
     'sass',
     'copyPhpBuild',
     'copySassBuild',

@@ -10,6 +10,9 @@ module.exports = function (gulp, plugins, config) {
             '@import "../../../bower_components/semantic-ui-sass/app/assets/stylesheets/semantic-ui.scss";\n'  + 
         '<% } %>\n';
 
+        // for now we drop support for semantic-ui-sass. There is no stable sass version
+        inject = '';
+
         gulp.src( config.dir.generatorSource + config.path.mainSassFile )
             .pipe( plugins.injectString.after(
                 '// endbower',

@@ -34,6 +34,7 @@ gulp.task('copyGitIgnore', getTask('copyGitIgnore'));
 gulp.task('copyEditorConfig', getTask('copyEditorConfig'));
 gulp.task('buildPackageJson', getTask('buildPackageJson'));
 gulp.task('copyPhp', getTask('copyPhp'));
+gulp.task('buildPageOpen', getTask('buildPageOpen'));
 gulp.task('copySassComponents', getTask('copySassComponents'));
 gulp.task('buildMainSassFile', getTask('buildMainSassFile'));
 gulp.task('buildJs', getTask('buildJs'));
@@ -43,6 +44,7 @@ gulp.task('build', [
     'copyGitIgnore',
     'copyEditorConfig',
     'buildPackageJson',
+    'buildPageOpen',
     'copyPhp',
     'copySassComponents',
     'buildMainSassFile',

@@ -9,6 +9,7 @@ module.exports = function( gulp, plugins ) {
             appGenerator: './generators/app/templates/',
             gulpGenerator: './generators/gulp/templates/',
             source: 'source/',
+            template: 'source/template/',
             sass: 'source/asset/sass/',
             js: 'source/asset/js/'
         },
@@ -17,6 +18,7 @@ module.exports = function( gulp, plugins ) {
             gulpFiles: '.gulp/**/*',
             gulpFile: 'Gulpfile.js',
             gitignore: '.gitignore',
+            pageOpen: 'source/template/pageOpen.php',
             editorConfig: '.editorconfig',
             packageJson: 'package.json',
             php: 'source/**/*.php',

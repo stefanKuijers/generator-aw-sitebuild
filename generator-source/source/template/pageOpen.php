@@ -12,6 +12,8 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbower -->
+        <!-- generator:css if-sementic-ui -->
+
         <!-- endbuild -->
 
 

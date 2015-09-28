@@ -94,7 +94,8 @@ module.exports = yeoman.generators.Base.extend( {
 
             case 'Semantic UI': 
                 generator.dependencies.output += '"semantic": "~2.1.4",\n    '; 
-                generator.dependencies.output += '"semantic-ui-sass": "*",\n    '; 
+                // possibly dropping sass cause there is no stable version of this lib
+                // generator.dependencies.output += '"semantic-ui-sass": "*",\n    '; 
                 break;
 
             case 'Foundation (ZURB)': 

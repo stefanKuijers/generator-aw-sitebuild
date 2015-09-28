@@ -2,7 +2,7 @@
         <!-- build:js(./bower_components) ../asset/js/vendor.sitebuild.js -->
         <!-- bower:js -->
         <script src="jquery/dist/jquery.js"></script>
-        <script src="bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+        <script src="semantic/dist/semantic.js"></script>
         <!-- endbower -->
        
         <!-- endbuild -->
