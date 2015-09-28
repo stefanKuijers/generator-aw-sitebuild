@@ -18,7 +18,8 @@ module.exports = function (gulp, plugins, config) {
             .pipe( plugins.wiredep({
                 // exclude the files from which we can get the sass-version
                 exclude: [
-                    'foundation'
+                    'foundation',
+                    'font-awesome'
                 ],
                 // config: the file is not in the root but the bower_components
                 // are so we need to remove this from the path to the files

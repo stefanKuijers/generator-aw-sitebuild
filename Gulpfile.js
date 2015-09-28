@@ -40,14 +40,14 @@ gulp.task('buildMainSassFile', getTask('buildMainSassFile'));
 gulp.task('buildJs', getTask('buildJs'));
 
 gulp.task('build', [ 
+    'copyPhp',
     'copyGulpFiles', 
     'copyGitIgnore',
     'copyEditorConfig',
-    'buildPackageJson',
-    'buildPageOpen',
-    'copyPhp',
     'copySassComponents',
+    'buildPackageJson',
     'buildMainSassFile',
-    'buildJs'
+    'buildJs',
+    'buildPageOpen'
 ] );
 /* end Tasks */

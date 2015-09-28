@@ -10,9 +10,11 @@
 
         <!-- build:css(./bower_components) ../asset/style/vendor.sitebuild.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
         <!-- endbower -->
-        <!-- generator:css if-sementic-ui -->
+        <% if (dependencies.framework === 'Semantic UI') { %>
+        <link rel="stylesheet" href="semantic/dist/semantic.css" />
+<% } %>
+
 
         <!-- endbuild -->
 
