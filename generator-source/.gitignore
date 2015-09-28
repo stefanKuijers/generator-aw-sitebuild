@@ -10,3 +10,4 @@ sitebuild
 *.sublime-project
 *.sublime-workspace
 npm-debug.log
+asset/css/
