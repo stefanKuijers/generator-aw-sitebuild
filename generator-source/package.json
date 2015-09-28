@@ -1,5 +1,5 @@
 {
-  "name": "<generator-source>",
+  "name": "generator-source-files",
   "version": "0.0.0",
   "devDependencies": {
     "browser-sync": "^2.9.3",
