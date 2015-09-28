@@ -1,6 +1,6 @@
 {
   "name": "generator-aw-sitebuild",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "repository": "stefanKuijers/generator-aw-sitebuild",
   "description": "A generator to setup a frontend workflow to sitebuild. The sitebuild it meant to pass on to backend developers for PHP development.",
   "license": "MIT",
@@ -21,5 +21,14 @@
     "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.1.0",
+    "gulp-inject-string": "0.0.2",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "yargs": "^3.26.0"
+  }
 }
