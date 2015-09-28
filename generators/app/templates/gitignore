@@ -9,3 +9,5 @@ sitebuild
 .idea
 *.sublime-project
 *.sublime-workspace
+npm-debug.log
+asset/css/
