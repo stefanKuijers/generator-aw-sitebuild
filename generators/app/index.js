@@ -2,6 +2,8 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var exec  = require('child_process').exec;
+
  
 module.exports = yeoman.generators.Base.extend( {
     dependencies: {},
@@ -61,6 +63,11 @@ module.exports = yeoman.generators.Base.extend( {
                 wrapUp();
             }
         }.bind( generator ));
+    },
+
+
+    makeBowerComponentDir: function() {
+        exec('mkdir bower_components');
     },
 
 
@@ -124,14 +131,14 @@ module.exports = yeoman.generators.Base.extend( {
         this.template( 'source/asset/js/app/mainMenu.js', 'source/asset/js/app/mainMenu.js' );
         this.template( 'source/asset/js/app/products.js', 'source/asset/js/app/products.js' );
         this.template( 'source/asset/js/app/product.js', 'source/asset/js/app/product.js' );
-    },
-
-    installDependencies: function() {
-        var generator = this;
-
-        generator.log( chalk.blue('Basic setup is done. Just running bower and npm install. If you have any errors run:\n$ npm install && bower install\nTo install dependencies manually') );
-
-        generator.bowerInstall();
-        generator.npmInstall();
     }
+
+    // installDependencies: function() {
+    //     var generator = this;
+
+    //     generator.log( chalk.blue('Basic setup is done. Just running bower and npm install. If you have any errors run:\n$ npm install && bower install\nTo install dependencies manually') );
+
+    //     generator.bowerInstall();
+    //     generator.npmInstall();
+    // }
 } );

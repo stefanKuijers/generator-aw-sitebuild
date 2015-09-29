@@ -6,7 +6,7 @@ module.exports = function (gulp, plugins, config) {
 
         // grab this file (as it holds the imports to all other .scss files 
         // we don't have to link to any other files)
-        gulp.src( config.path.mainSassFile )
+        return gulp.src( config.path.mainSassFile )
             // make sure that if we get error (invalid sass) that we don't break out of the server
             .pipe( plugins.plumber({ errorHandler: config.error.handler }) )
             // compile it to css and set some settings for error handling

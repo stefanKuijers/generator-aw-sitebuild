@@ -3,7 +3,7 @@
 */
 module.exports = function (gulp, plugins, config) {
     return function() {
-        gulp.src( [
+        return gulp.src( [
         	'bower_components/font-awesome/fonts/*.{eot,svg,ttf,woff,woff2}',
         	'bower_components/bootstrap-sass/assets/fonts/**/*.{eot,svg,ttf,woff,woff2}',
         ] )

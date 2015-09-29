@@ -9,7 +9,7 @@
 module.exports = function( gulp, plugins, config ) {
     return function() {
         // start a php server
-        plugins.connectPhp.server({
+        return plugins.connectPhp.server({
             base: config.dir.source
         }, function() {
             // once that is up and running:
@@ -27,7 +27,7 @@ module.exports = function( gulp, plugins, config ) {
             });
 
             // start the browserSync server
-            plugins.browserSync.init({
+            return plugins.browserSync.init({
                 notify: false,
                 // set online to false. This will disable some functionality but speed up the serving task
                 online: false,

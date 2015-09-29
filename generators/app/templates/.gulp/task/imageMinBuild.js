@@ -3,7 +3,7 @@
 */
 module.exports = function (gulp, plugins, config) {
     return function () {
-        gulp.src( config.dir.image + '**/*' )
+        return gulp.src( config.dir.image + '**/*' )
         	.pipe(plugins.plumber({ errorHandler: config.error.handler }))
 		    .pipe(
 		    	plugins.if(

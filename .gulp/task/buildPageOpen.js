@@ -6,7 +6,7 @@
 module.exports = function (gulp, plugins, config) {
 
     return function() {
-        var replace = '<% if (dependencies.framework === \'Semantic UI\') { %><link rel="stylesheet" href="semantic/dist/semantic.css" /><% } %>';
+        var replace = '<% if (dependencies.framework === \'Semantic UI\') { %><link rel="stylesheet" href="semantic/dist/semantic.min.css" /><% } %>';
 
         return gulp.src( config.dir.generatorSource + config.path.pageOpen )
             .pipe( plugins.replace(
