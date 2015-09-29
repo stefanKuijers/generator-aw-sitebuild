@@ -2,9 +2,5 @@
   "name": "frontend-workflow",
   "version": "0.0.0",
   "license": "MIT",
-  "dependencies": {
-    "font-awesome": "~4.4.0",
-    "semantic": "~2.1.4",
-    "semantic-ui-sass": "*"
-  }
+  "dependencies": {}
 }

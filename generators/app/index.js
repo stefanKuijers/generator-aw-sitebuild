@@ -22,7 +22,6 @@ module.exports = yeoman.generators.Base.extend( {
             message: 'Wich framework would you like to use?',
             choices: [
                 'Bootstrap', 
-                'Pure CSS',
                 'Semantic UI',
                 'Foundation (ZURB)',
                 'No framework'
@@ -49,7 +48,7 @@ module.exports = yeoman.generators.Base.extend( {
                 done();
             }
 
-            if ( props.framework === 'Pure CSS' || props.framework === 'No framework' ) {
+            if ( props.framework === 'No framework' ) {
                 generator.prompt( {
                     type: 'confirm',
                     name: 'jQuery',
@@ -86,10 +85,6 @@ module.exports = yeoman.generators.Base.extend( {
         switch( generator.dependencies.framework ) {
             case 'Bootstrap': 
                 generator.dependencies.output += '"bootstrap-sass": "~3.3.5",\n    '; 
-                break;
-
-            case 'Pure CSS': 
-                generator.dependencies.output += '"pure-sass": "~0.0.4",\n    '; 
                 break;
 
             case 'Semantic UI': 
