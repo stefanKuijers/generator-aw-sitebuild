@@ -10,4 +10,5 @@ sitebuild
 *.sublime-project
 *.sublime-workspace
 npm-debug.log
-asset/css/
+source/asset/css
+source/asset/fonts

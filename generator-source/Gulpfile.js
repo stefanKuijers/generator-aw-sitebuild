@@ -53,6 +53,7 @@ gulp.task('sass', getTask('sass'));
 gulp.task('serve', getTask('serve'));
 
 gulp.task('copyFontDev',      getTask('copyFontDev'));
+gulp.task('deleteTmpFolders',   getTask('deleteTmpFolders'));
 
 // A single task register line by line:
 gulp.task(                // register a task
@@ -65,7 +66,13 @@ gulp.task(                // register a task
 // this task runs a series of other tasks; sass, bower, serve. Once they are done it will execute the
 // function we passed in.
 // So here we compile our sass, inject our bower dependencies and after that start our server.
-gulp.task('default', ['copyFontDev', 'bower', 'sass', 'serve'], function () {
+gulp.task('default', [ 
+    'deleteTmpFolders', 
+    'copyFontDev', 
+    'bower', 
+    'sass', 
+    'serve'
+], function () {
     // once the server is up:
 
     //  start watching our php and js files. Reload all browsers if the files change.
@@ -82,7 +89,6 @@ gulp.task('default', ['copyFontDev', 'bower', 'sass', 'serve'], function () {
 
 
 /* Build: deleteTmpFolders, copyPhpBuild, copyFontBuild, imageMinBuild, userefBuild, serveBuild */
-gulp.task('deleteTmpFolders',   getTask('deleteTmpFolders'));
 gulp.task('copyPhpBuild',       getTask('copyPhpBuild'));
 gulp.task('copySassBuild',      getTask('copySassBuild'));
 gulp.task('copyFontBuild',      getTask('copyFontBuild'));

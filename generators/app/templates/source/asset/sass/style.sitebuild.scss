@@ -1,8 +1,9 @@
-
-
 // bower:scss
-@import "../../../bower_components/font-awesome/scss/font-awesome.scss";
-// endbower
+// endbower<% if (dependencies.framework === 'Foundation (ZURB)') { %>
+@import "../../../bower_components/foundation/scss/normalize.scss";
+@import "../../../bower_components/foundation/scss/foundation.scss";
+<% } %>
+
 
 // base
 @import 'vars';

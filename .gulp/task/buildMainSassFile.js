@@ -13,7 +13,7 @@ module.exports = function (gulp, plugins, config) {
             foundation: '<% if (dependencies.framework === \'Foundation (ZURB)\') { %>\n' + 
             '@import "../../../bower_components/foundation/scss/normalize.scss";\n'  + 
             '@import "../../../bower_components/foundation/scss/foundation.scss";\n'  + 
-            '<% } %>\n';
+            '<% } %>\n'
         }
 
         // for now we drop support for semantic-ui-sass. There is no stable sass version
