@@ -11,4 +11,6 @@
     </ul>
 </nav>
 
+<span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+
 <!-- /: template/mainMenu.php

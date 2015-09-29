@@ -1,6 +1,8 @@
 <!-- @: template/page/close.php -->
         <!-- build:js(./bower_components) ../asset/js/vendor.sitebuild.js -->
         <!-- bower:js -->
+        <script src="jquery/dist/jquery.js"></script>
+        <script src="bootstrap-sass/assets/javascripts/bootstrap.js"></script>
         <!-- endbower -->
        
         <!-- endbuild -->
