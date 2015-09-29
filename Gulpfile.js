@@ -14,13 +14,9 @@
 */
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({ camelize: true });
-plugins.yargs        = require('yargs');
-plugins.fs           = require('fs');
 plugins.exec         = require('child_process').exec;
 
 var config = require('./.gulp/config')(gulp, plugins);
-
-
 
 
 /*

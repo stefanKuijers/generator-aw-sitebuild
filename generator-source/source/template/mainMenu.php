@@ -6,7 +6,7 @@
             <a href="/">home</a>
         </li>
         <li>
-            <a href="/products.php"><i class="fa fa-edit"></i> products</a>
+            <a href="/products.php">products</a>
         </li>
     </ul>
 </nav>
