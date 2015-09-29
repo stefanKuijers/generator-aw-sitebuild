@@ -18,6 +18,11 @@ module.exports = function (gulp, plugins, config) {
 					    console.log( 'COMMIT_out:' + stdout );
 			    		console.log( 'COMMIT_err:' + stderr );
 
+			    		plugins.exec('git push origin master', function (err, stdout, stderr) {
+						    console.log( 'PUSH_out:' + stdout );
+				    		console.log( 'PUSH_err:' + stderr );
+				    	} ) ;
+
 						return plugins.exec('npm version patch', function (err, stdout, stderr) {
 						    console.log( 'PATCH_out: ' + stdout );
 						    console.log( 'PATCH_err: ' + stderr );
@@ -30,15 +35,9 @@ module.exports = function (gulp, plugins, config) {
 				    			return true;
 							} );
 						} );
-					    
 					} ) ;
-				    
 				} ) ;
-
-
 			});
-
-
         ;
     };
 };
