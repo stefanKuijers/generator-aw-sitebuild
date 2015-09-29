@@ -12,9 +12,7 @@
         <!-- bower:css -->
         <!-- endbower -->
         <!-- generator:css if-sementic-ui -->
-
         <!-- endbuild -->
-
 
         <!-- build:css(./source) ../asset/style/style.sitebuild.css -->
         <link rel="stylesheet" href="asset/css/style.sitebuild.css">

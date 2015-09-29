@@ -11,10 +11,7 @@
         <!-- build:css(./bower_components) ../asset/style/vendor.sitebuild.css -->
         <!-- bower:css -->
         <!-- endbower -->
-        <% if (dependencies.framework === 'Semantic UI') { %>
-        <link rel="stylesheet" href="semantic/dist/semantic.css" />
-<% } %>
-
+        <% if (dependencies.framework === 'Semantic UI') { %><link rel="stylesheet" href="semantic/dist/semantic.css" /><% } %>
 
         <!-- endbuild -->
 

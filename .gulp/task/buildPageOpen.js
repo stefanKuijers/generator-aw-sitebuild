@@ -6,11 +6,9 @@
 module.exports = function (gulp, plugins, config) {
 
     return function() {
-        var replace = '<% if (dependencies.framework === \'Semantic UI\') { %>\n        ' + 
-            '<link rel="stylesheet" href="semantic/dist/semantic.css" />\n'  + 
-        '<% } %>\n';
+        var replace = '<% if (dependencies.framework === \'Semantic UI\') { %><link rel="stylesheet" href="semantic/dist/semantic.css" /><% } %>';
 
-        gulp.src( config.dir.generatorSource + config.path.pageOpen )
+        return gulp.src( config.dir.generatorSource + config.path.pageOpen )
             .pipe( plugins.replace(
                 '<!-- generator:css if-sementic-ui -->',
                 replace

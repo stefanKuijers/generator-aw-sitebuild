@@ -5,7 +5,7 @@
 */
 module.exports = function (gulp, plugins, config) {
     return function() {
-        gulp.src( config.dir.generatorSource + config.path.sassComponents )
+        return gulp.src( config.dir.generatorSource + config.path.sassComponents )
             .pipe( gulp.dest( config.dir.appGenerator + config.dir.sass ) )
         ;
     };

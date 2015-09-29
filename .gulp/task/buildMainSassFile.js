@@ -16,9 +16,7 @@ module.exports = function (gulp, plugins, config) {
             '<% } %>\n'
         }
 
-        // for now we drop support for semantic-ui-sass. There is no stable sass version
-
-        gulp.src( config.dir.generatorSource + config.path.mainSassFile )
+        return gulp.src( config.dir.generatorSource + config.path.mainSassFile )
             .pipe( plugins.injectString.after(
                 '// endbower',
                 inject.foundation

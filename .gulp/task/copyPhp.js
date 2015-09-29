@@ -5,7 +5,7 @@
 */
 module.exports = function (gulp, plugins, config) {
     return function() {
-        gulp.src( [
+        return gulp.src( [
         		config.dir.generatorSource + config.path.php,
         		'!' + config.dir.generatorSource + config.path.pageOpen
         	] )

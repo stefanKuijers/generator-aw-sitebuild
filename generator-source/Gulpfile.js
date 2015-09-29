@@ -89,11 +89,12 @@ gulp.task('default', [
 
 
 /* Build: deleteTmpFolders, copyPhpBuild, copyFontBuild, imageMinBuild, userefBuild, serveBuild */
-gulp.task('copyPhpBuild',       getTask('copyPhpBuild'));
-gulp.task('copySassBuild',      getTask('copySassBuild'));
-gulp.task('copyFontBuild',      getTask('copyFontBuild'));
-gulp.task('imageMinBuild',      getTask('imageMinBuild'));
-gulp.task('userefBuild',        ['copyPhpBuild'], getTask('userefBuild'));
+gulp.task('copyPhpBuild',         getTask('copyPhpBuild'));
+gulp.task('copySassBuild',        getTask('copySassBuild'));
+gulp.task('copyFontBuild',        getTask('copyFontBuild'));
+gulp.task('imageMinBuild',        getTask('imageMinBuild'));
+gulp.task('userefBuild',          ['copyPhpBuild'], getTask('userefBuild'));
+gulp.task('correctFontPathBuild', ['userefBuild'], getTask('correctFontPathBuild'));
 
 // A series of gulp tasks under one command. When we type '$ gulp build' it will execute all the tasks in 
 // array after it in order
@@ -104,7 +105,8 @@ gulp.task( 'build', [
     'copySassBuild',
     'copyFontBuild',
     'imageMinBuild',
-    'userefBuild'
+    'userefBuild',
+    'correctFontPathBuild'
 ] );
 
 // Task to serve the build. Of course this task depends on making the build

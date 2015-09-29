@@ -30,7 +30,7 @@ module.exports = function (gulp, plugins, config) {
             .pipe(gulp.dest( config.dir.templates ));
 
         // Javascript
-        gulp.src( config.path.scriptReference )
+        return gulp.src( config.path.scriptReference )
             // user the wiredep plugin to wire dependencies into this file
             .pipe( plugins.wiredep({
                 // config: the file is not in the root but the bower_components

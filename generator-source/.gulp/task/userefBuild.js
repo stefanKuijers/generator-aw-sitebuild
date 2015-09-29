@@ -5,7 +5,7 @@ module.exports = function (gulp, plugins, config) {
 	var assets = plugins.useref.assets();
 
     return function() {
-    	gulp.src( [
+    	return gulp.src( [
     		config.path.scriptReference,
     		config.path.styleReference,
     	] )
