@@ -6,17 +6,22 @@
 module.exports = function (gulp, plugins, config) {
 
     return function() {
-        var inject = '<% if (dependencies.framework === \'Semantic UI\') { %>\n' + 
+        var inject = {
+            semantic: '<% if (dependencies.framework === \'Semantic UI\') { %>\n' + 
             '@import "../../../bower_components/semantic-ui-sass/app/assets/stylesheets/semantic-ui.scss";\n'  + 
-        '<% } %>\n';
+            '<% } %>\n',
+            foundation: '<% if (dependencies.framework === \'Foundation (ZURB)\') { %>\n' + 
+            '@import "../../../bower_components/foundation/scss/normalize.scss";\n'  + 
+            '@import "../../../bower_components/foundation/scss/foundation.scss";\n'  + 
+            '<% } %>\n';
+        }
 
         // for now we drop support for semantic-ui-sass. There is no stable sass version
-        inject = '';
 
         gulp.src( config.dir.generatorSource + config.path.mainSassFile )
             .pipe( plugins.injectString.after(
                 '// endbower',
-                inject
+                inject.foundation
             ) )
             .pipe( gulp.dest( config.dir.appGenerator + config.dir.sass ) )
         ;

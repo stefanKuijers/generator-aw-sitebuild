@@ -95,7 +95,7 @@ module.exports = yeoman.generators.Base.extend( {
 
             case 'Foundation (ZURB)': 
                 generator.dependencies.output += '"foundation": "~5.5.2",\n    ';
-                generator.dependencies.output += '"foundation-sass": "~5.5.2",\n    ';
+                // generator.dependencies.output += '"foundation-sass": "~5.5.2",\n    ';
                 break;
 
             default: break;
