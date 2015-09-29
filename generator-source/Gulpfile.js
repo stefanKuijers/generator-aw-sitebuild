@@ -4,6 +4,7 @@
     All you need to know:
     Gulp needs this file to know what it should do. Open a command-line, go to this folder
     and type 'gulp' and hit enter.
+    $ gulp
 
     It will compile your sass, inject any libraries you install with bower and serve 
     your project. When you change files, just hit save and your browser will stay up to 
@@ -51,6 +52,7 @@ function getTask(task) {
 gulp.task('sass', getTask('sass'));
 gulp.task('serve', getTask('serve'));
 
+gulp.task('copyFontDev',      getTask('copyFontDev'));
 
 // A single task register line by line:
 gulp.task(                // register a task
@@ -63,7 +65,7 @@ gulp.task(                // register a task
 // this task runs a series of other tasks; sass, bower, serve. Once they are done it will execute the
 // function we passed in.
 // So here we compile our sass, inject our bower dependencies and after that start our server.
-gulp.task('default', ['bower', 'sass', 'serve'], function () {
+gulp.task('default', ['copyFontDev', 'bower', 'sass', 'serve'], function () {
     // once the server is up:
 
     //  start watching our php and js files. Reload all browsers if the files change.
@@ -82,7 +84,7 @@ gulp.task('default', ['bower', 'sass', 'serve'], function () {
 /* Build: deleteTmpFolders, copyPhpBuild, copyFontBuild, imageMinBuild, userefBuild, serveBuild */
 gulp.task('deleteTmpFolders',   getTask('deleteTmpFolders'));
 gulp.task('copyPhpBuild',       getTask('copyPhpBuild'));
-gulp.task('copySassBuild',       getTask('copySassBuild'));
+gulp.task('copySassBuild',      getTask('copySassBuild'));
 gulp.task('copyFontBuild',      getTask('copyFontBuild'));
 gulp.task('imageMinBuild',      getTask('imageMinBuild'));
 gulp.task('userefBuild',        ['copyPhpBuild'], getTask('userefBuild'));
