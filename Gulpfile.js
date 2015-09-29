@@ -16,6 +16,7 @@ var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')({ camelize: true });
 plugins.yargs        = require('yargs');
 plugins.fs           = require('fs');
+plugins.exec         = require('child_process').exec;
 
 var config = require('./.gulp/config')(gulp, plugins);
 
@@ -29,6 +30,7 @@ function getTask(task) {
     return require( './' + config.dir.gulpTasks + task )(gulp, plugins, config);
 }
 
+/* building tasks */
 gulp.task('copyGulpFiles', getTask('copyGulpFiles'));
 gulp.task('copyGitIgnore', getTask('copyGitIgnore'));
 gulp.task('copyEditorConfig', getTask('copyEditorConfig'));
@@ -50,4 +52,9 @@ gulp.task('build', [
     'buildJs',
     'buildPageOpen'
 ] );
+
+/* publishing tasks */
+gulp.task('publish', getTask('publish'));
+
+
 /* end Tasks */
