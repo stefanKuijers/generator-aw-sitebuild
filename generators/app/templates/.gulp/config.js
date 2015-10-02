@@ -37,7 +37,9 @@ module.exports = function( gulp, plugins ) {
 
                 if ( this.emit !== undefined ) this.emit('end');
             }
-        }
+        },
+
+        eol: '\r\n'
     };
 
     return config;

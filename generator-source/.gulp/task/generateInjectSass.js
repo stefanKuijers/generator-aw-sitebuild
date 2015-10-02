@@ -10,7 +10,7 @@ module.exports = function (gulp, plugins, config) {
         return gulp.src( config.path.mainSassFile )
 	        .pipe( plugins.injectString.before(
 	        	'// endgenerator', 
-	        	importString + '\n'
+	        	importString + '\r\n'
 	        ) )
 	        .pipe( gulp.dest( config.dir.sass ) );
     };

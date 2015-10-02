@@ -89,8 +89,9 @@ gulp.task('default', [
 
 
 /* Build: deleteTmpFolders, copyPhpBuild, copyFontBuild, imageMinBuild, userefBuild, serveBuild */
-gulp.task('copyPhpBuild',         getTask('copyPhpBuild'));
-gulp.task('copySassBuild',        getTask('copySassBuild'));
+gulp.task('normalizeEOL',         ['bower'], getTask('normalizeEOL'));
+gulp.task('copyPhpBuild',         ['normalizeEOL'], getTask('copyPhpBuild'));
+gulp.task('copySassBuild',        ['normalizeEOL'], getTask('copySassBuild'));
 gulp.task('copyFontBuild',        getTask('copyFontBuild'));
 gulp.task('imageMinBuild',        getTask('imageMinBuild'));
 gulp.task('userefBuild',          ['copyPhpBuild'], getTask('userefBuild'));
@@ -100,6 +101,7 @@ gulp.task('correctFontPathBuild', ['userefBuild'], getTask('correctFontPathBuild
 // array after it in order
 gulp.task( 'build', [
     'bower',
+    'normalizeEOL',
     'sass',
     'copyPhpBuild',
     'copySassBuild',
